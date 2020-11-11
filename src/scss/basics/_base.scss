@@ -1,0 +1,27 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    transition: 0.2s;
+    font-family: 'Montserrat', sans-serif;
+
+}
+
+::selection {
+    background-color: $clr1;
+    color: $clr6;
+}
+
+html {
+    color: white;
+}
+
+body {
+    font-size: rem(18px);
+    margin: 0;
+    background-color: $clr1;
+}
+
+img {
+    width: 100%;
+}

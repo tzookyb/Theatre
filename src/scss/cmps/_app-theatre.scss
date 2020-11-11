@@ -1,0 +1,53 @@
+.seats {
+    background-color: rgb(116, 116, 116);
+    padding: 10px;
+    margin-bottom: 1rem;
+}
+
+.row {
+    margin-bottom: 10px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 30px;
+    
+    :first-child{
+        justify-content: flex-end;
+    }
+    :last-child{
+        justify-content: flex-start;
+
+    }
+}
+// display: grid;
+// grid-template-columns: repeat(auto-fill, 50px);
+.batch {
+    &:first-child {
+        justify-items: flex-end;
+    }
+    &:not(:last-child) {
+        // margin-inline-end: 20px;
+    }
+}
+
+.seat {
+    border: 3px solid darkgray;
+    border-radius: 10px;
+    border-top: none;
+    width: 30px;
+    height: 40px;
+    background-color: rgb(99, 26, 26);
+    
+    &:not(:last-child) {
+        margin-inline-end: 3px;
+    }
+
+    &:hover,&.selected{
+        background-color: rgb(250, 56, 56);
+    }
+
+    &.booked{
+        background-color: rgb(100, 100, 100);
+    }
+
+
+}
